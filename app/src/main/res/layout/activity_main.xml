@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<com.fangzhou.work.view.custom.MyViewPager-->
+        <!--android:id="@+id/viewPager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"></com.fangzhou.work.view.custom.MyViewPager>-->
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#6e6e6e" />
+    <!--底部导航栏-->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_fg_punch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:drawableTop="@drawable/bottom_index_pre"
+            android:text="首页"
+            android:textColor="@drawable/text_selecto"/>
+
+        <RadioButton
+            android:id="@+id/rb_fg_report"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="资讯"
+            android:drawableTop="@drawable/bottom_information"
+            android:textColor="@drawable/text_selecto"/>
+
+        <RadioButton
+            android:id="@+id/rb_fg_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="购物车"
+            android:drawableTop="@drawable/bottom_cart"
+            android:textColor="@drawable/text_selecto"/>
+
+        <RadioButton
+            android:id="@+id/rb_fg_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="我的"
+            android:drawableTop="@drawable/bottom_person"
+            android:textColor="@drawable/text_selecto"/>
+
+
+    </RadioGroup>
+
+
+</LinearLayout>
